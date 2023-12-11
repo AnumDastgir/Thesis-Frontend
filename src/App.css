@@ -1,38 +1,92 @@
+/* App.css */
+
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
+  background-color: #405044; /* (40, 48, 68) */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #78a1bb; /* #78A1BB */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.form {
+  background-color: #9cc5a8; /* EBF5EE */
+  opacity: 100%;
+  border: 2px solid #9cc5a8; /* BFA89E */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="file"],
+select {
+  background-color: #8b786d; /* 8B786D */
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1.20px solid #bfa89e; /* BFA89E */
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #062258;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+  background-color: grey; /* Grey out the button when disabled */
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.progress-bar {
+  background-color: #003652;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+button.cancel {
+  background-color: #dc3545;
+}
+
+button.cancel:hover {
+  background-color: #bd2130;
+}
+
+button.back {
+  background-color: #2f195f;;
+}
+
+button.back:hover {
+  background-color: #138496;
+}
+
+.notebook-not-selected {
+  color: red;
+  margin-top: 10px;
+}
+
+.conversion-status{
+  color: #78a1bb;
+  padding: 20px;
+  font-size: large;
+  font-weight: bold;
 }
